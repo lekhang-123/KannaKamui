@@ -8,7 +8,7 @@ local AllowedGameIds = {
 }
 
 if not AllowedGameIds[game.PlaceId] then
-    LocalPlayer:Kick("267\nDivine Fruits Only\nJoin dsc: https://discord.gg/d2dBW8x6nd")
+    LocalPlayer:Kick("Divine Fruits Only\nJoin dsc: https://discord.gg/d2dBW8x6nd")
     return
 end
 

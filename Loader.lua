@@ -1,4 +1,17 @@
 local Players = game:GetService("Players")
-local player = Players.LocalPlayer
+local LocalPlayer = Players.LocalPlayer
 
-player:Kick("Wait me fix.")
+local AllowedGameIds = {
+    [135658482799046] = true,
+    [86799537014206] = true,
+    [98423078180065] = true
+}
+
+if not AllowedGameIds[game.PlaceId] then
+    LocalPlayer:Kick("267\nDivine Fruits Only\nJoin dsc: https://discord.gg/d2dBW8x6nd")
+    return
+end
+
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/lekhang-123/no/refs/heads/main/wq"
+))()
